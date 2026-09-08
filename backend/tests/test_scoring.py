@@ -73,9 +73,6 @@ class TestEffectivenessValidation:
             validate_effectiveness(ImplementationStatus.IMPLEMENTED, Decimal("0.30"))
 
     def test_partial_accepts_mid_range(self):
-        validate_effectiveness(
-            ImplementationStatus.PARTIALLY_IMPLEMENTED, Decimal("0.70")
-        ) if False else None
         validate_effectiveness(ImplementationStatus.PARTIALLY_IMPLEMENTED, Decimal("0.65"))
 
     def test_partial_rejects_implemented_range(self):
